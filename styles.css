@@ -1,0 +1,36 @@
+  /* Overall styling for the body */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* 100% of the viewport height */
+    margin: 0; /* Remove default margin */
+  }
+  
+  /* Styling for the calculator container */
+  .calculator {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 equal-width columns */
+    gap: 6px; /* 6-pixel gap between grid items */
+    max-width: 300px; /* Maximum width of the calculator */
+  }
+  
+  /* Styling for the display area */
+  .display {
+    grid-column: span 4; /* Span all 4 columns */
+    background: #f1f1f1; /* Light gray background */
+    text-align: right; /* Text alignment to the right */
+    padding: 10px; /* Padding around the display area */
+    font-size: 1.5em; /* Larger font size for better visibility */
+  }
+  
+  /* Styling for calculator buttons */
+  button {
+    padding: 10px; /* Padding inside the button */
+    font-size: 1.2em; /* Font size of the button text */
+    background: #3498db; /* Background color of the button */
+    color: #fff; /* Text color of the button */
+    border: none; /* Remove button border */
+    border-radius: 4px; /* Add a slight border-radius for rounded corners */
+    cursor: pointer; /* Change cursor to pointer on hover */
+  }
